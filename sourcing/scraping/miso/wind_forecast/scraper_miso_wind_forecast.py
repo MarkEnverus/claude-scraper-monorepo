@@ -4,7 +4,21 @@ Collects wind power forecast data from MISO's public API.
 API: https://public-api.misoenergy.org/api/WindSolar/getwindforecast
 
 Data is stored to S3 with date partitioning and deduplicated using Redis.
+
+Version Information:
+    INFRASTRUCTURE_VERSION: 1.3.0
+    LAST_UPDATED: 2025-12-02
+
+Features:
+    - HTTP collection using BaseCollector framework
+    - Redis-based hash deduplication
+    - S3 storage with date partitioning and gzip compression
+    - Kafka notifications for downstream processing
+    - Comprehensive error handling and validation
 """
+
+# INFRASTRUCTURE_VERSION: 1.3.0
+# LAST_UPDATED: 2025-12-02
 
 import json
 import logging
@@ -155,6 +169,11 @@ class MisoWindForecastCollector(BaseCollector):
     type=click.Choice(["DEBUG", "INFO", "WARNING", "ERROR"]),
     help="Logging level",
 )
+@click.option(
+    "--kafka-connection-string",
+    envvar="KAFKA_CONNECTION_STRING",
+    help="Kafka connection string for notifications (optional)",
+)
 def main(
     s3_bucket: str,
     aws_profile: str,
@@ -163,6 +182,7 @@ def main(
     redis_port: int,
     redis_db: int,
     log_level: str,
+    kafka_connection_string: str,
 ):
     """Collect MISO wind forecast data.
 
@@ -207,7 +227,11 @@ def main(
         s3_prefix="sourcing",
         redis_client=redis_client,
         environment=environment,
+        kafka_connection_string=kafka_connection_string,
     )
+
+    if kafka_connection_string:
+        logger.info(f"Kafka notifications enabled: {kafka_connection_string.split('@')[0]}@...")
 
     # Override the s3_client to use our profile-aware one
     collector.s3_client = s3_client
