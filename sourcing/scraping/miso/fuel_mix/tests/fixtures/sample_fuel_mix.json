@@ -1,0 +1,44 @@
+{
+  "RefId": "03-Dec-2025 - Interval 12:55 EST",
+  "TotalMW": "89681",
+  "Fuel": {
+    "Type": [
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Coal",
+        "ACT": "28601",
+        "FUEL_CATEGORY": "Coal 28,601 MW"
+      },
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Natural Gas",
+        "ACT": "23575",
+        "FUEL_CATEGORY": "Natural Gas 23,575 MW"
+      },
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Nuclear",
+        "ACT": "11635",
+        "FUEL_CATEGORY": "Nuclear 11,635 MW"
+      },
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Wind",
+        "ACT": "19051",
+        "FUEL_CATEGORY": "Wind 19,051 MW"
+      },
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Solar",
+        "ACT": "5094",
+        "FUEL_CATEGORY": "Solar 5,094 MW"
+      },
+      {
+        "INTERVALEST": "12/03/2025 12:55:00",
+        "CATEGORY": "Other",
+        "ACT": "1170",
+        "FUEL_CATEGORY": "Other 1,170 MW"
+      }
+    ]
+  }
+}
