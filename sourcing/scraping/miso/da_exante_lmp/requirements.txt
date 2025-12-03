@@ -1,0 +1,22 @@
+# MISO Day-Ahead Ex-Ante LMP Scraper Requirements
+
+# Core dependencies
+requests>=2.31.0
+click>=8.1.0
+
+# Redis for hash registry
+redis>=5.0.0
+
+# AWS S3 for file storage
+boto3>=1.34.0
+
+# Kafka for streaming (optional)
+kafka-python>=2.0.2
+
+# Testing
+pytest>=7.4.0
+pytest-mock>=3.12.0
+
+# Type checking and linting
+mypy>=1.8.0
+ruff>=0.1.0
