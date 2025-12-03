@@ -101,12 +101,12 @@ class MisoWindForecastCollector(BaseCollector):
 
             # Check for Forecast array
             if "Forecast" not in data:
-                logger.warning(f"Missing 'Forecast' key in response")
+                logger.warning("Missing 'Forecast' key in response")
                 return False
 
             forecasts = data["Forecast"]
             if not isinstance(forecasts, list) or len(forecasts) == 0:
-                logger.warning(f"Invalid or empty Forecast array")
+                logger.warning("Invalid or empty Forecast array")
                 return False
 
             # Validate first entry has required fields

@@ -1,7 +1,7 @@
 """Tests for MISO NSI Five-Minute Data Scraper."""
 
 import json
-from datetime import date, datetime
+from datetime import date
 from pathlib import Path
 from unittest.mock import Mock, patch
 

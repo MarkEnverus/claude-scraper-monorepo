@@ -17,6 +17,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock
 import pytest
 import redis
+import requests
 
 from sourcing.scraping.miso.wind_forecast.scraper_miso_wind_forecast import (
     MisoWindForecastCollector,
@@ -164,7 +165,7 @@ class TestContentCollection:
     @patch("requests.get")
     def test_handles_http_error(self, mock_get, collector):
         """Should raise ScrapingError on HTTP failure."""
-        mock_get.side_effect = Exception("Connection timeout")
+        mock_get.side_effect = requests.exceptions.RequestException("Connection timeout")
 
         candidate = collector.generate_candidates()[0]
 
@@ -177,7 +178,8 @@ class TestContentCollection:
     def test_handles_404_error(self, mock_get, collector):
         """Should raise ScrapingError on 404."""
         mock_response = Mock()
-        mock_response.raise_for_status.side_effect = Exception("404 Not Found")
+        mock_response.status_code = 404
+        mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError("404 Not Found", response=mock_response)
         mock_get.return_value = mock_response
 
         candidate = collector.generate_candidates()[0]
@@ -307,8 +309,8 @@ class TestKafkaIntegration:
             "etag123"
         )
 
-    @patch("sourcing.infrastructure.collection_framework.KafkaProducer")
-    @patch("sourcing.infrastructure.collection_framework.KafkaConfiguration")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaProducer")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaConfiguration")
     def test_kafka_notification_sent(self, mock_kafka_config, mock_kafka_producer, collector_with_kafka):
         """Should publish notification when Kafka enabled."""
         mock_producer_instance = MagicMock()
@@ -325,8 +327,8 @@ class TestKafkaIntegration:
 
         mock_producer_instance.publish.assert_called_once()
 
-    @patch("sourcing.infrastructure.collection_framework.KafkaProducer")
-    @patch("sourcing.infrastructure.collection_framework.KafkaConfiguration")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaProducer")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaConfiguration")
     def test_kafka_message_structure(self, mock_kafka_config, mock_kafka_producer, collector_with_kafka):
         """Should send message with correct structure."""
         mock_producer_instance = MagicMock()
@@ -349,8 +351,8 @@ class TestKafkaIntegration:
         assert published_message.location == "s3://bucket/key"
         assert published_message.etag == "etag123"
 
-    @patch("sourcing.infrastructure.collection_framework.KafkaProducer")
-    @patch("sourcing.infrastructure.collection_framework.KafkaConfiguration")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaProducer")
+    @patch("sourcing.infrastructure.kafka_utils.KafkaConfiguration")
     def test_kafka_error_does_not_fail_collection(self, mock_kafka_config, mock_kafka_producer, collector_with_kafka):
         """Should log error but not raise on Kafka failure."""
         mock_kafka_producer.side_effect = Exception("Kafka unavailable")

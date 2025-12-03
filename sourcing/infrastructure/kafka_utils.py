@@ -233,7 +233,7 @@ class KafkaProducer:
             self.config = cfg
             self.producer = Producer(cfg.producer_cfg_dict)
             logger.debug(
-                f"Kafka producer initialized",
+                "Kafka producer initialized",
                 extra=cfg.log_cfg_dict
             )
         except Exception as e:

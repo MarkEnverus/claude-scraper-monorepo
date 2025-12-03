@@ -125,7 +125,7 @@ class MisoNsiFiveMinuteCollector(BaseCollector):
                 has_time = any(key.lower() in ['timestamp', 'datetime', 'time', 'effectivetime']
                               for key in data.keys())
 
-                if not (has_value or has_time):
+                if not (has_value and has_time):
                     logger.warning(f"Missing expected NSI fields. Available keys: {list(data.keys())}")
                     return False
 

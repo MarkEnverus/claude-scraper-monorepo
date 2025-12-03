@@ -248,7 +248,7 @@ class BaseCollector(ABC):
             compressed = gzip.compress(content)
 
             logger.debug(
-                f"Uploading to S3",
+                "Uploading to S3",
                 extra={
                     "bucket": bucket,
                     "key": key,
