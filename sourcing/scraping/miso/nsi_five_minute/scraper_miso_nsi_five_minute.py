@@ -23,7 +23,7 @@ Features:
 import json
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, UTC
 from typing import List
 
 import boto3
@@ -52,7 +52,7 @@ class MisoNsiFiveMinuteCollector(BaseCollector):
 
         MISO API only provides current data, so we generate one candidate per run.
         """
-        collection_time = datetime.utcnow()
+        collection_time = datetime.now(UTC)
         identifier = f"nsi_five_minute_{collection_time.strftime('%Y%m%d_%H%M')}.json"
 
         candidate = DownloadCandidate(

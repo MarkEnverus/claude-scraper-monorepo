@@ -12,7 +12,7 @@ Test coverage:
 
 import json
 import gzip
-from datetime import datetime, date
+from datetime import datetime, date, UTC
 from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock
 import pytest
@@ -126,7 +126,7 @@ class TestCandidateGeneration:
         candidates = collector.generate_candidates()
         candidate = candidates[0]
 
-        assert candidate.file_date == datetime.utcnow().date()
+        assert candidate.file_date == datetime.now(UTC).date()
 
 
 # Test: Content Collection

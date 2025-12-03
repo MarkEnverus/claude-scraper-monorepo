@@ -21,7 +21,7 @@ Example:
 
 import hashlib
 import json
-from datetime import datetime
+from datetime import datetime, UTC
 from typing import Any, Dict, Optional
 
 import redis
@@ -163,7 +163,7 @@ class HashRegistry:
 
         record = {
             "s3_path": s3_path,
-            "registered_at": datetime.utcnow().isoformat() + "Z",
+            "registered_at": datetime.now(UTC).isoformat() + "Z",
             "metadata": metadata
         }
 
