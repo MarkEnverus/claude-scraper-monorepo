@@ -111,7 +111,11 @@ class MisoDayAheadExAnteLMPCollector(BaseCollector):
             raise ScrapingError(f"Failed to fetch DA Ex-Ante LMP data: {e}") from e
 
     def validate_content(self, content: bytes, candidate: DownloadCandidate) -> bool:
-        """Validate CSV structure of DA Ex-Ante LMP data."""
+        """Validate CSV structure of DA Ex-Ante LMP data.
+
+        Expected format (wide format):
+        Node,Type,Value,HE 1,HE 2,HE 3,...,HE 24
+        """
         try:
             text_content = content.decode('utf-8')
             csv_reader = csv.DictReader(io.StringIO(text_content))
@@ -121,7 +125,8 @@ class MisoDayAheadExAnteLMPCollector(BaseCollector):
                 logger.warning("No CSV headers found")
                 return False
 
-            required_fields = ["Node", "Value", "MarketDay", "HourEnding"]
+            # Required fields for MISO DA Ex-Ante LMP (wide format with hourly columns)
+            required_fields = ["Node", "Type", "Value"]
             missing_fields = []
             for field in required_fields:
                 if field not in csv_reader.fieldnames:
@@ -129,6 +134,13 @@ class MisoDayAheadExAnteLMPCollector(BaseCollector):
 
             if missing_fields:
                 logger.warning(f"Missing required fields: {missing_fields}")
+                return False
+
+            # Check for hourly columns (HE 1 through HE 24)
+            hourly_columns = [f"HE {i}" for i in range(1, 25)]
+            has_hourly = any(col in csv_reader.fieldnames for col in hourly_columns)
+            if not has_hourly:
+                logger.warning("Missing hourly columns (HE 1-24)")
                 return False
 
             # Validate has data rows
