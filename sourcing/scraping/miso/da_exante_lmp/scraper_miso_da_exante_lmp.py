@@ -113,12 +113,31 @@ class MisoDayAheadExAnteLMPCollector(BaseCollector):
     def validate_content(self, content: bytes, candidate: DownloadCandidate) -> bool:
         """Validate CSV structure of DA Ex-Ante LMP data.
 
-        Expected format (wide format):
-        Node,Type,Value,HE 1,HE 2,HE 3,...,HE 24
+        Expected format (with 4 header lines before column headers):
+        Line 0: "Day Ahead Market ExAnte LMPs"
+        Line 1: "MM/DD/YYYY" (date)
+        Line 2: "" (blank line)
+        Line 3: ",,,All Hours-Ending are Eastern Standard Time (EST)"
+        Line 4: "Node,Type,Value,HE 1,HE 2,HE 3,...,HE 24"
+        Line 5+: Data rows
         """
         try:
             text_content = content.decode('utf-8')
-            csv_reader = csv.DictReader(io.StringIO(text_content))
+            lines = text_content.split('\n')
+
+            # Skip first 4 header lines
+            # Line 0: "Day Ahead Market ExAnte LMPs"
+            # Line 1: Date (MM/DD/YYYY)
+            # Line 2: Blank line
+            # Line 3: Timezone note (starts with commas)
+            # Line 4: Actual CSV headers
+            if len(lines) < 6:  # Need at least 5 header lines + 1 data row
+                logger.warning(f"Insufficient lines in CSV: {len(lines)}")
+                return False
+
+            # Parse CSV starting from line 5 (index 4)
+            csv_content = '\n'.join(lines[4:])
+            csv_reader = csv.DictReader(io.StringIO(csv_content))
 
             # Check for required columns
             if not csv_reader.fieldnames:
