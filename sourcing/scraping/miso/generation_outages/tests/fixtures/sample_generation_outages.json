@@ -1,0 +1,85 @@
+{
+  "RefId": "05-Dec-2025 - Total Outage Megawatts: 40,964",
+  "Days": [
+    {
+      "OutageDate": "2025-11-30T00:00:00Z",
+      "OutageMonthDay": "Nov-30",
+      "Unplanned": 5230,
+      "Planned": 8150,
+      "Forced": 3120,
+      "Derated": 2340
+    },
+    {
+      "OutageDate": "2025-12-01T00:00:00Z",
+      "OutageMonthDay": "Dec-1",
+      "Unplanned": 5000,
+      "Planned": 3000,
+      "Forced": 2500,
+      "Derated": 1500
+    },
+    {
+      "OutageDate": "2025-12-02T00:00:00Z",
+      "OutageMonthDay": "Dec-2",
+      "Unplanned": 4800,
+      "Planned": 3200,
+      "Forced": 2300,
+      "Derated": 1600
+    },
+    {
+      "OutageDate": "2025-12-03T00:00:00Z",
+      "OutageMonthDay": "Dec-3",
+      "Unplanned": 5100,
+      "Planned": 3100,
+      "Forced": 2600,
+      "Derated": 1400
+    },
+    {
+      "OutageDate": "2025-12-04T00:00:00Z",
+      "OutageMonthDay": "Dec-4",
+      "Unplanned": 4900,
+      "Planned": 3300,
+      "Forced": 2400,
+      "Derated": 1700
+    },
+    {
+      "OutageDate": "2025-12-05T00:00:00Z",
+      "OutageMonthDay": "Dec-5",
+      "Unplanned": 5200,
+      "Planned": 3000,
+      "Forced": 2500,
+      "Derated": 1500
+    },
+    {
+      "OutageDate": "2025-12-06T00:00:00Z",
+      "OutageMonthDay": "Dec-6",
+      "Unplanned": 4700,
+      "Planned": 3400,
+      "Forced": 2200,
+      "Derated": 1800
+    },
+    {
+      "OutageDate": "2025-12-07T00:00:00Z",
+      "OutageMonthDay": "Dec-7",
+      "Unplanned": 5300,
+      "Planned": 2900,
+      "Forced": 2700,
+      "Derated": 1300
+    },
+    {
+      "OutageDate": "2025-12-08T00:00:00Z",
+      "OutageMonthDay": "Dec-8",
+      "Unplanned": 4950,
+      "Planned": 3150,
+      "Forced": 2450,
+      "Derated": 1550
+    },
+    {
+      "OutageDate": "2025-12-09T00:00:00Z",
+      "OutageMonthDay": "Dec-9",
+      "Unplanned": 5050,
+      "Planned": 3050,
+      "Forced": 2550,
+      "Derated": 1450
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "node": "ALTW.WELLS1",
+      "lmp": 22.1,
+      "mcc": 0.03,
+      "mec": 21.34,
+      "mlc": 0.73,
+      "interval": "00:00",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:00:00.000",
+        "end": "2023-06-29 00:05:00.000",
+        "value": "2023-06-29"
+      }
+    },
+    {
+      "node": "ALTW.WELLS1",
+      "lmp": 21.95,
+      "mcc": 0.025,
+      "mec": 21.28,
+      "mlc": 0.645,
+      "interval": "00:05",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:05:00.000",
+        "end": "2023-06-29 00:10:00.000",
+        "value": "2023-06-29"
+      }
+    },
+    {
+      "node": "ALTW.WELLS1",
+      "lmp": 22.05,
+      "mcc": 0.028,
+      "mec": 21.31,
+      "mlc": 0.712,
+      "interval": "00:10",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:10:00.000",
+        "end": "2023-06-29 00:15:00.000",
+        "value": "2023-06-29"
+      }
+    },
+    {
+      "node": "AMEREN.ILLINOIS",
+      "lmp": 23.45,
+      "mcc": 0.15,
+      "mec": 22.5,
+      "mlc": 0.8,
+      "interval": "00:00",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:00:00.000",
+        "end": "2023-06-29 00:05:00.000",
+        "value": "2023-06-29"
+      }
+    },
+    {
+      "node": "AMEREN.ILLINOIS",
+      "lmp": 23.38,
+      "mcc": 0.14,
+      "mec": 22.45,
+      "mlc": 0.79,
+      "interval": "00:05",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:05:00.000",
+        "end": "2023-06-29 00:10:00.000",
+        "value": "2023-06-29"
+      }
+    },
+    {
+      "node": "AMEREN.ILLINOIS",
+      "lmp": 23.42,
+      "mcc": 0.145,
+      "mec": 22.48,
+      "mlc": 0.795,
+      "interval": "00:10",
+      "timeInterval": {
+        "resolution": "5min",
+        "start": "2023-06-29 00:10:00.000",
+        "end": "2023-06-29 00:15:00.000",
+        "value": "2023-06-29"
+      }
+    }
+  ],
+  "total_records": 6,
+  "time_resolution": "5min"
+}

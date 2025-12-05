@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "interval": "1",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2025-01-01 00:00:00.000",
+        "end": "2025-01-02 00:00:00.000",
+        "value": "2025-01-02"
+      },
+      "node": "ALTW.WELLS1",
+      "lmp": 21.60,
+      "mcc": 0.02,
+      "mec": 20.94,
+      "mlc": 0.64
+    },
+    {
+      "interval": "2",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2025-01-01 00:00:00.000",
+        "end": "2025-01-02 00:00:00.000",
+        "value": "2025-01-02"
+      },
+      "node": "ALTW.WELLS1",
+      "lmp": 22.15,
+      "mcc": 0.05,
+      "mec": 21.35,
+      "mlc": 0.75
+    },
+    {
+      "interval": "1",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2025-01-01 00:00:00.000",
+        "end": "2025-01-02 00:00:00.000",
+        "value": "2025-01-02"
+      },
+      "node": "AMEREN.ILLINOIS",
+      "lmp": 23.50,
+      "mcc": 1.00,
+      "mec": 21.50,
+      "mlc": 1.00
+    },
+    {
+      "interval": "13",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2025-01-01 00:00:00.000",
+        "end": "2025-01-02 00:00:00.000",
+        "value": "2025-01-02"
+      },
+      "node": "CINERGY",
+      "lmp": 25.00,
+      "mcc": 2.00,
+      "mec": 22.00,
+      "mlc": 1.00
+    }
+  ],
+  "page": {
+    "pageNumber": 1,
+    "pageSize": 4,
+    "totalElements": 72000,
+    "totalPages": 18000,
+    "lastPage": false
+  }
+}

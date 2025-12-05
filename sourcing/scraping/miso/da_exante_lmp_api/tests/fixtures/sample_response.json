@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "interval": "1",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 00:00:00.000",
+        "end": "2023-06-29 00:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "ALTW.WELLS1",
+      "lmp": 22.1,
+      "mcc": 0.03,
+      "mec": 21.34,
+      "mlc": 0.73
+    },
+    {
+      "interval": "2",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 01:00:00.000",
+        "end": "2023-06-29 01:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "ALTW.WELLS1",
+      "lmp": 21.8,
+      "mcc": 0.02,
+      "mec": 21.15,
+      "mlc": 0.63
+    },
+    {
+      "interval": "3",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 02:00:00.000",
+        "end": "2023-06-29 02:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "ALTW.WELLS1",
+      "lmp": 20.5,
+      "mcc": 0.01,
+      "mec": 19.94,
+      "mlc": 0.55
+    },
+    {
+      "interval": "1",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 00:00:00.000",
+        "end": "2023-06-29 00:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "AMRN.MDAVIS",
+      "lmp": 23.5,
+      "mcc": 0.15,
+      "mec": 22.8,
+      "mlc": 0.55
+    },
+    {
+      "interval": "2",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 01:00:00.000",
+        "end": "2023-06-29 01:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "AMRN.MDAVIS",
+      "lmp": 22.9,
+      "mcc": 0.12,
+      "mec": 22.3,
+      "mlc": 0.48
+    },
+    {
+      "interval": "3",
+      "timeInterval": {
+        "resolution": "daily",
+        "start": "2023-06-28 02:00:00.000",
+        "end": "2023-06-29 02:00:00.000",
+        "value": "2023-06-29"
+      },
+      "node": "AMRN.MDAVIS",
+      "lmp": 21.7,
+      "mcc": 0.08,
+      "mec": 21.15,
+      "mlc": 0.47
+    }
+  ],
+  "total_records": 6
+}

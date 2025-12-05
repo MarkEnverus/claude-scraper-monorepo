@@ -1,0 +1,177 @@
+{
+  "data": [
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 1",
+      "mcp": 5.23,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 2",
+      "mcp": 4.87,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 3",
+      "mcp": 5.45,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 4",
+      "mcp": 5.12,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 5",
+      "mcp": 4.95,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 6",
+      "mcp": 5.67,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 7",
+      "mcp": 5.34,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Regulation",
+      "zone": "Zone 8",
+      "mcp": 5.89,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Spin",
+      "zone": "Zone 1",
+      "mcp": 3.12,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Spin",
+      "zone": "Zone 2",
+      "mcp": 2.98,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Spin",
+      "zone": "Zone 3",
+      "mcp": 3.25,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Spin",
+      "zone": "Zone 4",
+      "mcp": 3.45,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Supplemental",
+      "zone": "Zone 1",
+      "mcp": 1.87,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Supplemental",
+      "zone": "Zone 2",
+      "mcp": 1.92,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "STR",
+      "zone": "Zone 1",
+      "mcp": 2.45,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "STR",
+      "zone": "Zone 2",
+      "mcp": 2.31,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Ramp-up",
+      "zone": "Zone 1",
+      "mcp": 4.56,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Ramp-up",
+      "zone": "Zone 2",
+      "mcp": 4.23,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Ramp-down",
+      "zone": "Zone 1",
+      "mcp": 3.78,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T10:30:00Z",
+      "product": "Ramp-down",
+      "zone": "Zone 2",
+      "mcp": 3.65,
+      "marketType": "real-time"
+    },
+    {
+      "datetime": "2025-12-05T11:00:00Z",
+      "product": "Regulation",
+      "zone": "Zone 1",
+      "mcp": 6.45,
+      "marketType": "day-ahead"
+    },
+    {
+      "datetime": "2025-12-05T11:00:00Z",
+      "product": "Regulation",
+      "zone": "Zone 2",
+      "mcp": 6.12,
+      "marketType": "day-ahead"
+    },
+    {
+      "datetime": "2025-12-05T11:00:00Z",
+      "product": "Spin",
+      "zone": "Zone 1",
+      "mcp": 3.89,
+      "marketType": "day-ahead"
+    },
+    {
+      "datetime": "2025-12-05T11:00:00Z",
+      "product": "Spin",
+      "zone": "Zone 2",
+      "mcp": 3.67,
+      "marketType": "day-ahead"
+    }
+  ],
+  "metadata": {
+    "totalRecords": 24,
+    "updateTimestamp": "2025-12-05T10:35:00Z",
+    "dataSource": "MISO Public Market Pricing"
+  }
+}

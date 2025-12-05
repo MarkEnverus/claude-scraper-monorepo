@@ -1,0 +1,65 @@
+{
+  "RefId": "2025-12-05T12:35:00Z",
+  "ClearedMW": [
+    {
+      "Hour": "12:00",
+      "Value": 32456
+    },
+    {
+      "Hour": "13:00",
+      "Value": 34123
+    },
+    {
+      "Hour": "14:00",
+      "Value": 35789
+    },
+    {
+      "Hour": "15:00",
+      "Value": 36234
+    }
+  ],
+  "MediumTermLoadForecast": [
+    {
+      "HourEnding": "14:00",
+      "LoadForecast": 35678
+    },
+    {
+      "HourEnding": "15:00",
+      "LoadForecast": 36245
+    },
+    {
+      "HourEnding": "16:00",
+      "LoadForecast": 37012
+    },
+    {
+      "HourEnding": "17:00",
+      "LoadForecast": 37456
+    },
+    {
+      "HourEnding": "18:00",
+      "LoadForecast": 38123
+    }
+  ],
+  "FiveMinTotalLoad": [
+    {
+      "Time": "12:30:00",
+      "Value": 33123
+    },
+    {
+      "Time": "12:35:00",
+      "Value": 33456
+    },
+    {
+      "Time": "12:40:00",
+      "Value": 33789
+    },
+    {
+      "Time": "12:45:00",
+      "Value": 34012
+    },
+    {
+      "Time": "12:50:00",
+      "Value": 34234
+    }
+  ]
+}

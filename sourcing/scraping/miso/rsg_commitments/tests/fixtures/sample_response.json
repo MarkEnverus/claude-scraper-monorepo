@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "resourceId": "ALTW.WELLS1",
+      "resourceName": "Wells 1",
+      "resourceType": "GENERATOR",
+      "commitmentStart": "2025-12-05T10:00:00-05:00",
+      "commitmentEnd": "2025-12-05T12:00:00-05:00",
+      "commitmentReason": "MUST_RUN",
+      "economicMaximum": 100.0,
+      "economicMinimum": 20.0,
+      "actualOutput": 50.0,
+      "marginalCost": 25.5,
+      "startupCost": 1000.0,
+      "minimumRunTime": 60
+    },
+    {
+      "resourceId": "WIND.FARM1",
+      "resourceName": "Wind Farm 1",
+      "resourceType": "WIND",
+      "commitmentStart": "2025-12-05T09:00:00-05:00",
+      "commitmentEnd": "2025-12-05T13:00:00-05:00",
+      "commitmentReason": "CONGESTION_RELIEF",
+      "economicMaximum": 200.0,
+      "economicMinimum": 0.0,
+      "actualOutput": 150.0,
+      "marginalCost": 0.0,
+      "startupCost": 0.0,
+      "minimumRunTime": 30
+    },
+    {
+      "resourceId": "CC.UNIT2",
+      "resourceName": "Combined Cycle Unit 2",
+      "resourceType": "COMBINED_CYCLE",
+      "commitmentStart": "2025-12-05T08:00:00-05:00",
+      "commitmentEnd": "2025-12-05T14:00:00-05:00",
+      "commitmentReason": "OUT_OF_MERIT_ECONOMIC",
+      "economicMaximum": 500.0,
+      "economicMinimum": 100.0,
+      "actualOutput": 300.0,
+      "marginalCost": 35.75,
+      "startupCost": 5000.0,
+      "minimumRunTime": 120
+    },
+    {
+      "resourceId": "SOLAR.FARM1",
+      "resourceName": "Solar Farm 1",
+      "resourceType": "SOLAR",
+      "commitmentStart": "2025-12-05T11:00:00-05:00",
+      "commitmentEnd": "2025-12-05T15:00:00-05:00",
+      "commitmentReason": "LOCAL_VOLTAGE_SUPPORT",
+      "economicMaximum": 75.0,
+      "economicMinimum": 0.0,
+      "actualOutput": 60.0,
+      "marginalCost": 0.0,
+      "startupCost": 0.0,
+      "minimumRunTime": 15
+    },
+    {
+      "resourceId": "STORAGE.BESS1",
+      "resourceName": "Battery Storage 1",
+      "resourceType": "ENERGY_STORAGE",
+      "commitmentStart": "2025-12-05T10:30:00-05:00",
+      "commitmentEnd": "2025-12-05T11:30:00-05:00",
+      "commitmentReason": "RELIABILITY_MUST_RUN",
+      "economicMaximum": 50.0,
+      "economicMinimum": 10.0,
+      "actualOutput": 30.0,
+      "marginalCost": 45.0,
+      "startupCost": 100.0,
+      "minimumRunTime": 30
+    }
+  ],
+  "metadata": {
+    "timestamp": "2025-12-05T10:05:00-05:00",
+    "totalCommitments": 5,
+    "updateInterval": "PT5M"
+  }
+}

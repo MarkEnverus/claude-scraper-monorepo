@@ -1,0 +1,53 @@
+{
+  "RefId": "05-Dec-2025 - Interval 12:30 EST",
+  "SubRegionalConstraints": [
+    {
+      "Name": "MINN_METRO_WEST_01",
+      "Region": "Minnesota",
+      "Subregion": "Metro West",
+      "ConstraintType": "TRANSMISSION_CAPACITY",
+      "Period": "2025-12-05T12:30:00Z",
+      "Price": 12.50,
+      "ConstraintValue": 450.0,
+      "ConstraintLimit": 500.0,
+      "Utilization": 90.0,
+      "OVERRIDE": false
+    },
+    {
+      "Name": "ILL_URBAN_EAST_02",
+      "Region": "Illinois",
+      "Subregion": "Urban East",
+      "ConstraintType": "VOLTAGE_LIMITATION",
+      "Period": "2025-12-05T12:30:00Z",
+      "Price": 8.75,
+      "ConstraintValue": 320.0,
+      "ConstraintLimit": 400.0,
+      "Utilization": 80.0,
+      "OVERRIDE": false
+    },
+    {
+      "Name": "WISC_NORTH_03",
+      "Region": "Wisconsin",
+      "Subregion": "Northern Plains",
+      "ConstraintType": "GENERATION_INTERCONNECTION",
+      "Period": "2025-12-05T12:30:00Z",
+      "Price": 15.25,
+      "ConstraintValue": 580.0,
+      "ConstraintLimit": 600.0,
+      "Utilization": 96.67,
+      "OVERRIDE": true
+    },
+    {
+      "Name": "MICH_SOUTHEAST_04",
+      "Region": "Michigan",
+      "Subregion": "Southeast Corridor",
+      "ConstraintType": "LOAD_BALANCING",
+      "Period": "2025-12-05T12:30:00Z",
+      "Price": 5.50,
+      "ConstraintValue": 200.0,
+      "ConstraintLimit": 300.0,
+      "Utilization": 66.67,
+      "OVERRIDE": false
+    }
+  ]
+}

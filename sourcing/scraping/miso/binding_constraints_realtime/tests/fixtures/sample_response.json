@@ -1,0 +1,43 @@
+{
+  "RefId": "05-Dec-2025, 14:35 EST",
+  "Constraint": [
+    {
+      "Name": "AMRN_3053_CNTY",
+      "Period": "2025-12-05T14:35:00",
+      "Price": 12.45,
+      "OVERRIDE": 0,
+      "CURVETYPE": "MW",
+      "BP1": 100.0,
+      "PC1": 95.0,
+      "BP2": 120.0,
+      "PC2": 98.0
+    },
+    {
+      "Name": "CONS_3001_EAST",
+      "Period": "2025-12-05T14:35:00",
+      "Price": 25.78,
+      "OVERRIDE": 1,
+      "CURVETYPE": "PERCENT",
+      "BP1": 85.0,
+      "PC1": 90.0,
+      "BP2": 95.0,
+      "PC2": 92.0
+    },
+    {
+      "Name": "FLOW_2145_WEST",
+      "Period": "2025-12-05T14:35:00",
+      "Price": 8.92,
+      "OVERRIDE": 0,
+      "CURVETYPE": "MW",
+      "BP1": 200.0,
+      "PC1": 97.5,
+      "BP2": 220.0,
+      "PC2": 99.0
+    }
+  ],
+  "collection_metadata": {
+    "collection_timestamp": "2025-12-05T19:35:00+00:00",
+    "source": "miso_public_api",
+    "endpoint": "https://public-api.misoenergy.org/api/BindingConstraints/RealTime"
+  }
+}

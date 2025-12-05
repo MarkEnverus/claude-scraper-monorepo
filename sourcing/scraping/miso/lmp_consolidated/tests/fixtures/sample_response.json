@@ -1,0 +1,162 @@
+{
+  "FiveMinLMP": [
+    {
+      "Timestamp": "HE 9 INT 15",
+      "Region": "South",
+      "PricingNodes": [
+        {
+          "Name": "EES.EXXOBMT",
+          "LMP": 25.50,
+          "MEC": 17.40,
+          "MLC": 2.35,
+          "MCC": 5.75
+        },
+        {
+          "Name": "ALTW.WELLS1",
+          "LMP": 22.10,
+          "MEC": 21.34,
+          "MLC": 0.73,
+          "MCC": 0.03
+        },
+        {
+          "Name": "CONS.PEAKE",
+          "LMP": 28.45,
+          "MEC": 20.15,
+          "MLC": 3.20,
+          "MCC": 5.10
+        }
+      ]
+    },
+    {
+      "Timestamp": "HE 9 INT 20",
+      "Region": "North",
+      "PricingNodes": [
+        {
+          "Name": "AMIL.MTPLSNT",
+          "LMP": 24.80,
+          "MEC": 21.50,
+          "MLC": 1.80,
+          "MCC": 1.50
+        },
+        {
+          "Name": "DECO.BLLVUE",
+          "LMP": 26.30,
+          "MEC": 22.10,
+          "MLC": 2.40,
+          "MCC": 1.80
+        }
+      ]
+    }
+  ],
+  "HourlyIntegratedLMP": [
+    {
+      "Timestamp": "HE 9",
+      "Region": "South",
+      "PricingNodes": [
+        {
+          "Name": "EES.EXXOBMT",
+          "LMP": 24.75,
+          "MEC": 17.20,
+          "MLC": 2.25,
+          "MCC": 5.30
+        },
+        {
+          "Name": "ALTW.WELLS1",
+          "LMP": 21.85,
+          "MEC": 21.10,
+          "MLC": 0.70,
+          "MCC": 0.05
+        },
+        {
+          "Name": "CONS.PEAKE",
+          "LMP": 27.90,
+          "MEC": 19.95,
+          "MLC": 3.05,
+          "MCC": 4.90
+        }
+      ]
+    },
+    {
+      "Timestamp": "HE 10",
+      "Region": "North",
+      "PricingNodes": [
+        {
+          "Name": "AMIL.MTPLSNT",
+          "LMP": 25.40,
+          "MEC": 22.00,
+          "MLC": 1.90,
+          "MCC": 1.50
+        },
+        {
+          "Name": "DECO.BLLVUE",
+          "LMP": 26.80,
+          "MEC": 22.50,
+          "MLC": 2.50,
+          "MCC": 1.80
+        }
+      ]
+    }
+  ],
+  "DayAheadExAnteLMP": [
+    {
+      "Timestamp": "2025-12-05 HE 1",
+      "Region": "South",
+      "PricingNodes": [
+        {
+          "Name": "EES.EXXOBMT",
+          "LMP": 23.50,
+          "MEC": 16.80,
+          "MLC": 2.20,
+          "MCC": 4.50
+        },
+        {
+          "Name": "ALTW.WELLS1",
+          "LMP": 20.95,
+          "MEC": 20.15,
+          "MLC": 0.75,
+          "MCC": 0.05
+        },
+        {
+          "Name": "CONS.PEAKE",
+          "LMP": 26.30,
+          "MEC": 19.20,
+          "MLC": 2.90,
+          "MCC": 4.20
+        }
+      ]
+    },
+    {
+      "Timestamp": "2025-12-05 HE 2",
+      "Region": "North",
+      "PricingNodes": [
+        {
+          "Name": "AMIL.MTPLSNT",
+          "LMP": 24.10,
+          "MEC": 21.00,
+          "MLC": 1.70,
+          "MCC": 1.40
+        },
+        {
+          "Name": "DECO.BLLVUE",
+          "LMP": 25.60,
+          "MEC": 21.80,
+          "MLC": 2.30,
+          "MCC": 1.50
+        }
+      ]
+    },
+    {
+      "Timestamp": "2025-12-05 HE 3",
+      "Region": "Midwest",
+      "PricingNodes": [
+        {
+          "Name": "MISO.CENTRAL",
+          "LMP": 22.40,
+          "MEC": 20.50,
+          "MLC": 1.20,
+          "MCC": 0.70
+        }
+      ]
+    }
+  ]
+}

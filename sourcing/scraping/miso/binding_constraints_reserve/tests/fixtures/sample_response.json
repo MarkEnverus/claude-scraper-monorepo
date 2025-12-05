@@ -1,0 +1,44 @@
+{
+  "RefId": "05-Dec-2025, 09:35 EST",
+  "Constraint": [
+    {
+      "Name": "SPIN_REG_WEST",
+      "Period": "2025-12-05T14:35:00Z",
+      "Price": 12.50,
+      "ReserveType": "SPIN",
+      "Direction": "UP",
+      "Quantity": 450.0,
+      "OVERRIDE": 0,
+      "BP1": 100.0,
+      "PC1": 0.25,
+      "BP2": 200.0,
+      "PC2": 0.50
+    },
+    {
+      "Name": "NSPIN_CENTRAL",
+      "Period": "2025-12-05T14:35:00Z",
+      "Price": 8.75,
+      "ReserveType": "NSPIN",
+      "Direction": "UP",
+      "Quantity": 300.0,
+      "OVERRIDE": 0,
+      "BP1": 75.0,
+      "PC1": 0.20,
+      "BP2": 150.0,
+      "PC2": 0.40
+    },
+    {
+      "Name": "REG_UP_EAST",
+      "Period": "2025-12-05T14:35:00Z",
+      "Price": 15.25,
+      "ReserveType": "REG_UP",
+      "Direction": "UP",
+      "Quantity": 250.0,
+      "OVERRIDE": 1,
+      "BP1": 50.0,
+      "PC1": 0.15,
+      "BP2": 100.0,
+      "PC2": 0.30
+    }
+  ]
+}

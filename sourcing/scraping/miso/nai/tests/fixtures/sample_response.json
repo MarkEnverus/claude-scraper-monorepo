@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "RefId": "MISO_SPP_1",
+      "TieFlowName": "MISO - Southwest Power Pool",
+      "TieFlowValue": 1234.56,
+      "Timestamp": "2025-12-05T14:30:00Z"
+    },
+    {
+      "RefId": "MISO_PJM_1",
+      "TieFlowName": "MISO - PJM Interconnection",
+      "TieFlowValue": -567.89,
+      "Timestamp": "2025-12-05T14:30:00Z"
+    },
+    {
+      "RefId": "MISO_TVA_1",
+      "TieFlowName": "MISO - Tennessee Valley Authority",
+      "TieFlowValue": 234.12,
+      "Timestamp": "2025-12-05T14:30:00Z"
+    },
+    {
+      "RefId": "MISO_LGEE_1",
+      "TieFlowName": "MISO - Louisville Gas and Electric",
+      "TieFlowValue": 89.45,
+      "Timestamp": "2025-12-05T14:30:00Z"
+    },
+    {
+      "RefId": "MISO_AECI_1",
+      "TieFlowName": "MISO - Associated Electric Cooperative",
+      "TieFlowValue": -123.67,
+      "Timestamp": "2025-12-05T14:30:00Z"
+    }
+  ]
+}

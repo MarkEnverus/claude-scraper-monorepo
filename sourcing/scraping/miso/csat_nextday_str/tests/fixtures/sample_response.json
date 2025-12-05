@@ -1,0 +1,43 @@
+{
+  "operatingDay": "2025-01-01",
+  "publishedTimestamp": "2024-12-31T14:00:00Z",
+  "totalShortTermReserveRequirement": 2500.5,
+  "reserveComponents": [
+    {
+      "type": "RegulationReserve",
+      "value": 800.0,
+      "unit": "MW"
+    },
+    {
+      "type": "ContingencyReserve",
+      "value": 1700.5,
+      "unit": "MW"
+    }
+  ],
+  "subregions": [
+    {
+      "name": "North",
+      "shortTermReserveRequirement": 1200.0,
+      "reserveDeficit": 0.0
+    },
+    {
+      "name": "Central",
+      "shortTermReserveRequirement": 900.5,
+      "reserveDeficit": 15.0
+    },
+    {
+      "name": "South",
+      "shortTermReserveRequirement": 400.0,
+      "reserveDeficit": 0.0
+    }
+  ],
+  "qualitativeAssessment": {
+    "overallAdequacy": "Adequate",
+    "uncertaintyFactor": 0.15,
+    "recommendedActions": [
+      "Monitor wind forecasts",
+      "Review thermal unit availability",
+      "Track load forecast accuracy"
+    ]
+  }
+}

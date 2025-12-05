@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-05T14:30:00Z",
+  "updateInterval": "5m",
+  "hubs": [
+    {
+      "name": "CINERGY",
+      "lmp": 25.50,
+      "components": {
+        "energy": 24.80,
+        "congestion": 0.45,
+        "losses": 0.25
+      }
+    },
+    {
+      "name": "MINN",
+      "lmp": 28.75,
+      "components": {
+        "energy": 27.90,
+        "congestion": 0.60,
+        "losses": 0.25
+      }
+    },
+    {
+      "name": "AECI",
+      "lmp": 22.10,
+      "components": {
+        "energy": 21.50,
+        "congestion": 0.35,
+        "losses": 0.25
+      }
+    },
+    {
+      "name": "ARKANSAS",
+      "lmp": 23.45,
+      "components": {
+        "energy": 22.80,
+        "congestion": 0.40,
+        "losses": 0.25
+      }
+    },
+    {
+      "name": "ILLINOIS",
+      "lmp": 26.20,
+      "components": {
+        "energy": 25.50,
+        "congestion": 0.45,
+        "losses": 0.25
+      }
+    }
+  ]
+}

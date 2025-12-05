@@ -1,0 +1,26 @@
+[
+  {
+    "t": "Forecasted Peak Demand",
+    "v": "92540",
+    "d": "2025-12-05T09:35:00-05:00",
+    "id": "peak_demand_forecast"
+  },
+  {
+    "t": "Current Demand",
+    "v": "91809",
+    "d": "2025-12-05T09:35:00-05:00",
+    "id": "current_demand"
+  },
+  {
+    "t": "Marginal Energy Cost",
+    "v": "39.36",
+    "d": "2025-12-05T09:35:00-05:00",
+    "id": "marginal_energy_cost"
+  },
+  {
+    "t": "Scheduled Interchange",
+    "v": "763",
+    "d": "2025-12-05T09:35:00-05:00",
+    "id": "scheduled_interchange"
+  }
+]

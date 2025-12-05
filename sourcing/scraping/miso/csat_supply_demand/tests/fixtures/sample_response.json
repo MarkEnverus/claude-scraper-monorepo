@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-12-05T10:00:00-05:00",
+  "region": "MISO_TOTAL",
+  "data": {
+    "actualDemand": {
+      "value": 75000,
+      "unit": "MW",
+      "timestamp": "2025-12-05T10:00:00-05:00"
+    },
+    "committedCapacity": {
+      "value": 85000,
+      "unit": "MW",
+      "timestamp": "2025-12-05T10:00:00-05:00"
+    },
+    "availableCapacity": {
+      "value": 10000,
+      "unit": "MW",
+      "timestamp": "2025-12-05T10:00:00-05:00",
+      "calculationType": "committed_minus_demand"
+    },
+    "demandForecast": {
+      "value": 78000,
+      "unit": "MW",
+      "timestamp": "2025-12-05T10:00:00-05:00",
+      "forecastHorizon": "24h"
+    },
+    "committedCapacityForecast": {
+      "value": 87000,
+      "unit": "MW",
+      "timestamp": "2025-12-05T10:00:00-05:00",
+      "forecastHorizon": "24h"
+    }
+  },
+  "adequacyScore": {
+    "value": 0.85,
+    "interpretation": "Adequate capacity margin - resources are sufficient to meet forecasted demand with comfortable reserves",
+    "riskLevel": "LOW"
+  }
+}
